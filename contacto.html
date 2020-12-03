@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/styles.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +19,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="https://flisol.info/FLISOL2020/Argentina">FLISOL Argentina</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -42,6 +43,10 @@
           <a class="nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
         </li>
 
+        <li class="nav-item active">
+          <a class="nav-link" href="adivinanza.html">Adivinanza <span class="sr-only">(current)</span></a>
+        </li>
+
         
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -54,15 +59,19 @@
   <div class="conteiner">
       <div class="row">
           <div class="col-lg-4">
+              <img src="imagenes/contacto.jpeg" class="img-fluid" alt="Responsive image" width="350px" height="500px">
+          </div>
+          <div class="col-lg-4">
                 <form>
                         <div class="form-group">
                                 <label for="txtNombre">Apellido</label>
-                                <input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="Ingrese su apellido" aria-describedby="helpid">
+                                <input type="text" name="txtApellido" id="txtApellido" class="form-control" placeholder="Ingrese su apellido" aria-describedby="helpid" required pattern="[A-Za-z]{5,40}"  title="Se aceptan solo Letras. Tamaño mínimo: 5. Tamaño máximo: 40">
                                 <small id="helpid" class="form-text text-muted">Apellido</small>
                             </div>  
                     <div class="form-group">
                         <label for="txtNombre">Nombre</label>
-                        <input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="Ingrese su nombre" aria-describedby="helpid">
+                        <input type="text" name="txtNombre" id="txtNombre" class="form-control" placeholder="Ingrese su nombre" aria-describedby="helpid" required pattern="[A-Za-z]{5,40}"  title="Se aceptan solo Letras. Tamaño mínimo: 5. Tamaño máximo: 40">
+                   
                         <small id="helpid" class="form-text text-muted">Nombre</small>
                     </div>
                     <div class="form-group">
